@@ -1,0 +1,21 @@
+.filterItemContainer{
+    /* background: red; */
+    display: flex;
+    flex-direction: row;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.image{
+    height: 300px;
+    width: 200px;
+}
+.description{
+    margin-left: 20px;
+    
+}
+.brand{
+    margin-right: 20px;
+}
