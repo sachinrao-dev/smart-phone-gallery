@@ -1,21 +1,49 @@
-.filterItemContainer{
-    /* background: red; */
+::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .search-bar {
     display: flex;
-    flex-direction: row;
-}
-#container{
+    justify-content: start;
+    margin: 10px;
+  }
+  
+  #searchBar {
+      border: 2px solid black;
+      border-radius: 5px;
+      padding: 5px;
+  }
+  
+  .filter-head {
+    padding-left: 10px;
+  }
+  
+  .content {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.image{
-    height: 300px;
-    width: 200px;
-}
-.description{
-    margin-left: 20px;
-    
-}
-.brand{
-    margin-right: 20px;
-}
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  
+  .data {
+    width: 30%;
+    margin: 20px 20px 20px 0px;
+  }
+  
+  .brand-radio {
+    margin: 0 10px;
+  }
+  
+  .filters {
+    display: flex;
+  }
+  
+  .filter-apply-btn {
+    margin: 0 10px;
+  }
