@@ -1,48 +1,25 @@
-<!-- @format -->
-
-<html>
-  <head>
-    <title>Gallery</title>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <div>
-      <div>
-        <input />
-      </div>
-      <div class="filterItemContainer">
-        <div class="brand">
-          <h2>Brand</h2>
-          <input type="checkbox" />
-          <label for="vehicle1"> RedMe</label><br />
-          <input type="checkbox" />
-          <label for="vehicle2"> RealMe</label><br />
-          <input type="checkbox" />
-          <label for="vehicle3"> Samsung</label><br /><br />
-          <input type="checkbox" />
-          <label for="vehicle3"> Nokia</label><br /><br />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="search-bar">
+      <input id="searchBar" type="text" placeholder="search by name">
+      <span class="filter-head"> Filters : </span>
+      <div class="filters">
+        <div class="brand-filter" id="brand-filter">
         </div>
-        <div class="price">
-          <h2>Price</h2>
-          <p>5000,7899</p>
-          <p>7899, 99999</p>
-          <p>99999, 15999</p>
-          <p>15999, 20000</p>
-        </div>
-        <div id="container">
-          <div class="itemImage">
-            <img
-              src="https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/814ePfNubRL._AC_UY327_FMwebp_QL65_.jpg"
-              class="image"
-            />
-          </div>
-          <div class="description">
-            <p>model</p>
-            <p>Price</p>
-          </div>
-        </div>
+        <button class="filter-apply-btn" onclick="filterItems()">Filter Apply</button>
       </div>
     </div>
-    <script type="module" src="View/Dashboard.js"></script>
-  </body>
+    <div class="content" id="content">
+    </div>
+  </div>
+</body>
 </html>

@@ -4,9 +4,9 @@
     flex-direction: row;
 }
 #container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
 }
 .image{
     height: 300px;
