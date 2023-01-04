@@ -1,0 +1,149 @@
+[
+    {
+      "id":1,
+      "name":"Redmi A1",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81UT07JsBqL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":6499,
+      "brand":"Redmi"
+    },
+    {
+      "id":2,
+      "name":"Redmi 9 Activ",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/911TJ1CDbLL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":8499,
+      "brand":"Redmi"
+    },
+    {
+      "id":3,
+      "name":"Redmi 10A",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71293gyogZL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":8999,
+      "brand":"Redmi"
+    },
+    {
+      "id":4,
+      "name":"Redmi Note 11",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71yTvU9VgdL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":12999,
+      "brand":"Redmi"
+    },
+    {
+      "id":5,
+      "name":"Redmi 11 Prime",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81lAth+jv+L._AC_UY327_FMwebp_QL65_.jpg",
+      "price":13999,
+      "brand":"Redmi"
+    },
+    {
+      "id":6,
+      "name":"Nokia 8210",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61c2AvRrhOL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":13999,
+      "brand":"Nokia"
+    },
+    {
+      "id":7,
+      "name":"Nokia C104",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61CXAHkNXCL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":5380,
+      "brand":"Nokia"
+    },
+    {
+      "id":8,
+      "name":"Nokia 5310",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/51XhQNPBV6L._AC_UY327_FMwebp_QL65_.jpg",
+      "price":3449,
+      "brand":"Nokia"
+    },
+    {
+      "id":9,
+      "name":"Nokia 105",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/51GSe9rxsoL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":1324,
+      "brand":"Nokia"
+    },
+    {
+      "id":10,
+      "name":"Nokia 215",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61SKFLoO8JL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":3250,
+      "brand":"Nokia"
+    },
+    {
+      "id":11,
+      "name":"realme narzo 30",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81X85GWtYHL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":1699,
+      "brand":"realme"
+    },
+    {
+      "id":12,
+      "name":"realme narzo 50",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81X85GWtYHL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":15999,
+      "brand":"realme"
+    },
+    {
+      "id":13,
+      "name":"realme narzo 50i",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81X85GWtYHL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":15999,
+      "brand":"realme"
+    },
+    {
+      "id":14,
+      "name":"realme C35",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/61z2aTr+8pL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":12989,
+      "brand":"realme"
+    },
+    {
+      "id":15,
+      "name":"realme narzo 50A",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81X85GWtYHL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":12989,
+      "brand":"realme"
+    },
+    {
+      "id":16,
+      "name":"Samsung Galaxy M04",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/814ePfNubRL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":9499,
+      "brand":"samsung"
+    },
+    {
+      "id":17,
+      "name":"Samsung Galaxy M13",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81-fFXQdPTL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":1199,
+      "brand":"samsung"
+    },
+    {
+      "id":18,
+      "name":"Samsung Galaxy M14 ",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/814ePfNubRL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":9499,
+      "brand":"samsung"
+    },
+    {
+      "id":19,
+      "name":"Samsung Galaxy A23",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/91W42b8YW+L._AC_UY327_FMwebp_QL65_.jpg",
+      "price":18499,
+      "brand":"samsung"
+    },
+    {
+      "id":20,
+      "name":"Samsung Galaxy S20",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/91W42b8YW+L._AC_UY327_FMwebp_QL65_.jpg",
+      "price":18499,
+      "brand":"samsung"
+    },
+    {
+        "id":20,
+      "name":"Samsung Galaxy S20",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/91W42b8YW+L._AC_UY327_FMwebp_QL65_.jpg",
+      "price":18499,
+      "brand":"iphone"
+    }
+  ]
