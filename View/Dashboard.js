@@ -1,1 +1,4 @@
-const container = document.getElementById("container");
+import { Menu } from "./Constant.js";
+Menu.forEach((item)=>(
+    console.log(item, "item")
+))  ;
