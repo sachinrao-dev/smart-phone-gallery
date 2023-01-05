@@ -10,12 +10,11 @@
 <body>
   <div class="container">
     <div class="search-bar">
-      <input id="searchBar" type="text" placeholder="search by name" onchange="searchByName()">
+      <input id="searchBar" type="text" placeholder="search by name" onchange="getFilterData()">
       <span class="filter-head"> Filters : </span>
       <div class="filters">
         <div class="brand-filter" id="brand-filter">
         </div>
-        <button class="filter-apply-btn" onclick="filterItems()">Filter Apply</button>
       </div>
     </div>
     <div class="content" id="content">

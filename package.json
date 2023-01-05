@@ -1,10 +1,13 @@
 {
   "name": "smart-phone-gallery",
   "version": "1.0.0",
+  "homepage": "https://sachinrao-dev.github.io/smart-phone-gallery",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,7 @@
   "bugs": {
     "url": "https://github.com/sachinrao-dev/smart-phone-gallery/issues"
   },
-  "homepage": "https://github.com/sachinrao-dev/smart-phone-gallery#readme"
+  "dependencies": {
+    "firebase": "^9.15.0"
+  }
 }

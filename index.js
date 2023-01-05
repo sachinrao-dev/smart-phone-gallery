@@ -4,21 +4,23 @@ const contentDiv = document.getElementById('content')
 const searchBar = document.getElementById('searchBar')
 
 initial();
-
-function filterItems() {
-  contentDiv.innerHTML = ''
-  filters.forEach((e) => {
-    if(e.checked) {
-      fetch('./data.json')
-    .then((response) => response.json())
-    .then((data) => {
-      const newData = data.filter((item) => {
-        return item.brand == e.value})
-      renderData(newData)
-    });
-    }
-  })
-}
+const priceData = [
+  {
+    start_price:1000,
+   end_price:5000
+  },
+  {
+    start_price:5000,
+   end_price:10000
+  },
+  {
+    start_price:10000,
+   end_price:13000
+  },
+  {
+    end_price:15000
+  }
+]
 
 function initial() {
   filterDiv.innerHTML= ''
@@ -29,19 +31,8 @@ function initial() {
       const uniqueBrand = [...new Set(data.map((item) => item.brand))];
       renderData(data);
       renderFilterRadio(uniqueBrand);
-    });
-}
-function searchByName() {
-  fetch('./data.json')
-    .then((response) => response.json())
-    .then((data) => {
-      let filteredData = data;
-      if(searchBar.value) {
-        filteredData = data.filter((item) => {
-          return item.name.toLowerCase() === searchBar.value.toLowerCase().trim();
-        });
-      } 
-      renderData(filteredData);
+    renderPrice();
+
     });
 }
 
@@ -75,6 +66,58 @@ function renderData(data) {
       contentDiv.appendChild(dataDiv)
     }
 }
+function getFilterData(item){
+  fetch('./data.json')
+    .then((response) => response.json())
+    .then((data) => {
+      let filteredData = data;
+      filters.forEach((e) => {
+    if(e.checked) {
+      filteredData = data.filter((item) => {
+        return item.brand == e.value})
+    }
+  })
+  if(item){
+
+    if(!item.start_price) {
+      filteredData = filteredData.filter((items) => {
+        return items.price >= item.end_price;
+      });
+    } 
+    else{
+      filteredData = filteredData.filter((items) => {
+        return items.price >= item.start_price && items.price < item.end_price;
+      });        
+    }
+  }
+if(searchBar.value){
+  filteredData = filteredData.filter((item) => {
+    return item.name.toLowerCase() === searchBar.value.toLowerCase().trim();
+  });  
+}
+      renderData(filteredData);
+    });
+  
+}
+function renderPrice(){
+  const priceDiv= document.createElement("div");
+  priceDiv.className= "priceFilter";
+  priceData.forEach((item)=>{
+    const anchorLink = document.createElement("a");
+    anchorLink.className="priceLink";
+    if(!item.start_price){
+      anchorLink.innerHTML= `over ${item.end_price}`
+    }else{
+      anchorLink.innerHTML= `${item.start_price}- ${item.end_price}`;
+
+    }
+anchorLink.addEventListener("click", ()=>{
+  getFilterData(item);
+})
+priceDiv.appendChild(anchorLink);
+filterDiv.append(priceDiv);
+  })
+}
 
 function renderFilterRadio(data) {
   data.forEach((item) => {
@@ -86,6 +129,9 @@ function renderFilterRadio(data) {
     radioInput.className = "brand-radio"
     radioLabel.htmlFor = "brand"
     radioLabel.innerText = item
+    radioInput.addEventListener("click",()=>{
+      getFilterData();
+    } )
     filterDiv.appendChild(radioInput);
     filterDiv.appendChild(radioLabel);
   })
