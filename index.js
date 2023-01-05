@@ -31,6 +31,19 @@ function initial() {
       renderFilterRadio(uniqueBrand);
     });
 }
+function searchByName() {
+  fetch('./data.json')
+    .then((response) => response.json())
+    .then((data) => {
+      let filteredData = data;
+      if(searchBar.value) {
+        filteredData = data.filter((item) => {
+          return item.name.toLowerCase() === searchBar.value.toLowerCase().trim();
+        });
+      } 
+      renderData(filteredData);
+    });
+}
 
 function renderData(data) {
   contentDiv.innerHTML= ""
