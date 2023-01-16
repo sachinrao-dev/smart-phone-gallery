@@ -145,5 +145,12 @@
       "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/91W42b8YW+L._AC_UY327_FMwebp_QL65_.jpg",
       "price":18499,
       "brand":"iphone"
+    },
+    {
+      "id": 21,
+      "name":"Lava",
+      "img":"https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/81UT07JsBqL._AC_UY327_FMwebp_QL65_.jpg",
+      "price":6499,
+      "brand":"Lava"
     }
   ]
