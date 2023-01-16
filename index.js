@@ -2,6 +2,9 @@ const filterDiv = document.getElementById("brand-filter");
 const filters = document.getElementsByName("brand");
 const contentDiv = document.getElementById("content");
 const searchBar = document.getElementById("searchBar");
+const mainBrandFilter = document.createElement("div")
+const mainPriceFilterDiv = document.createElement("div");
+
 
 initial();
 const priceData = [
@@ -98,12 +101,10 @@ function getFilterData(item) {
         });
       }
       renderData(filteredData);
-      console.log(filteredData, "object");
     });
 }
 function renderPrice() {
-  const priceDiv = document.createElement("div");
-  priceDiv.className = "priceFilter";
+  
   priceData.forEach((item) => {
     const anchorLink = document.createElement("a");
     anchorLink.className = "priceLink";
@@ -115,13 +116,16 @@ function renderPrice() {
     anchorLink.addEventListener("click", () => {
       getFilterData(item);
     });
+    const priceDiv = document.createElement("div");
+    priceDiv.className = "priceFilter";
     priceDiv.appendChild(anchorLink);
-    filterDiv.append(priceDiv);
+    mainPriceFilterDiv.appendChild(priceDiv);
+    filterDiv.append(mainPriceFilterDiv);
   });
 }
 
 function renderFilterRadio(data) {
-  data.forEach((item) => {
+  data.map((item) => {
     const radioInput = document.createElement("input");
     const radioLabel = document.createElement("label");
     radioInput.type = "radio";
@@ -133,7 +137,11 @@ function renderFilterRadio(data) {
     radioInput.addEventListener("click", () => {
       getFilterData();
     });
-    filterDiv.appendChild(radioInput);
-    filterDiv.appendChild(radioLabel);
+    const brandFilterDiv = document.createElement("div");
+    brandFilterDiv.className = "brandFilter";
+    brandFilterDiv.append(radioInput);
+    brandFilterDiv.append(radioLabel);
+    mainBrandFilter.append(brandFilterDiv);
+    filterDiv.append(mainBrandFilter);
   });
 }
