@@ -27,20 +27,20 @@ The page will reload when you make changes. You may also see any lint errors in 
 ## Initial View of Application
 ![Dashboard](assets/Dashboard.png)
 
-## After clicked the Readme brand filter button 
+## After clicked the Readme brand filter
 ![Read me filter](assets/redme.png)
 
-## After clicked the Lava Brand filter button 
+## After clicked the Lava Brand filter
 ![Lava filter](assets/lava.png)
 
-## After clicked the Nokia brand filter button 
+## After clicked the Nokia brand filter 
 ![Nokia filter](assets/nokia.png)
 
-## After clicked the RealMe brand  filter button 
+## After clicked the RealMe brand  filter  
 ![RealME filter](assets/realme.png)
 
-## After clicked the samsung brand filter button 
+## After clicked the samsung brand filter  
 ![Samsung filter](assets/samsung.png)
 
-## After clicked the Search filter button 
+## After clicked the Search filter  
 ![Search filter](assets/searchfilter.png)
